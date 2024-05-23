@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Search Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Digite o código da cor</h1>
+        <div id="colorDisplay" class="color-display"></div>
+        <div id="colorDescription"></div>
+        <div class="search-container">
+            <input type="text" id="colorInput" placeholder="Enter color code (#hex or r g b)">
+            <button id="searchBtn">Pesquisar</button>
+        </div>
+        <h2>Exemplos</h2>
+        <div class="examples">
+            <div class="example">
+                <div class="color-box" style="background-color: #ff5733;"></div>
+                <span>#ff5733</span>
+                <p>A cor laranja é vibrante e cheia de energia, transmitindo entusiasmo e alegria.</p>
+            </div>
+            <div class="example">
+                <div class="color-box" style="background-color: #33ff57;"></div>
+                <span>#33ff57</span>
+                <p>O verde representa a natureza e a tranquilidade, proporcionando uma sensação de calma e harmonia.</p>
+            </div>
+            <div class="example">
+                <div class="color-box" style="background-color: #3357ff;"></div>
+                <span>#3357ff</span>
+                <p>O azul é associado à serenidade e confiança, induzindo sentimentos de paz e estabilidade.</p>
+            </div>
+            <div class="example">
+                <div class="color-box" style="background-color: rgb(255, 87, 51);"></div>
+                <span>255 87 51</span>
+                <p>O vermelho é uma cor poderosa que evoca paixão e energia, estimulando a ação e a determinação.</p>
+            </div>
+            <div class="example">
+                <div class="color-box" style="background-color: rgb(51, 255, 87);"></div>
+                <span>51 255 87</span>
+                <p>O verde vibrante é revigorante e revitalizante, simbolizando crescimento e renovação.</p>
+            </div>
+        </div>
+        <h2>Cores Similares</h2>
+        <div id="similarColors" class="similar-colors"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
